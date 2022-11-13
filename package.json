@@ -21,7 +21,6 @@
   "homepage": "https://github.com/priyajitm/batch-54-react-todo#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
-    "chalk": "^5.1.2",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "mongoose": "^6.6.7",
