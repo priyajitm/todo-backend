@@ -3,12 +3,14 @@ const connectDatabase = require('./config/db')
 const passportAuth = require('./config/passportConfig')
 const session = require('express-session')
 const passport = require('passport')
+const cors = require('cors')
 
 const port = process.env.PORT || 5000
 const app = express()
 connectDatabase()
 passportAuth()
 
+app.use(cors());
 app.use(express.json())
 app.use(session({
     secret: 'keyboard cat',
