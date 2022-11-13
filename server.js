@@ -11,7 +11,7 @@ connectDatabase()
 passportAuth()
 
 app.use(cors({
-  origin: 'https://todoedureka.netlify.app/'
+  origin: 'www.todoedureka.netlify.app'
 }));
 app.use(express.json())
 app.use(session({
