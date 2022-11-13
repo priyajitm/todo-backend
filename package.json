@@ -1,0 +1,35 @@
+{
+  "name": "react-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyajitm/batch-54-react-todo.git"
+  },
+  "author": "Priyajit Mukherjee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/priyajitm/batch-54-react-todo/issues"
+  },
+  "homepage": "https://github.com/priyajitm/batch-54-react-todo#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "chalk": "^5.1.2",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.6.7",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "nodemon": "^2.0.20"
+  }
+}
