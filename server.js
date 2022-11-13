@@ -4,7 +4,7 @@ const passportAuth = require('./config/passportConfig')
 const session = require('express-session')
 const passport = require('passport')
 
-const port = 5000
+const port = process.env.PORT || 5000
 const app = express()
 connectDatabase()
 passportAuth()
