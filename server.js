@@ -10,7 +10,9 @@ const app = express()
 connectDatabase()
 passportAuth()
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://todoedureka.netlify.app/'
+}));
 app.use(express.json())
 app.use(session({
     secret: 'keyboard cat',
